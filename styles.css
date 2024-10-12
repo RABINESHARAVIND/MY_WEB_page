@@ -1,0 +1,128 @@
+/* General Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('assets/images/background.webp');
+    background-size: cover; /* Ensures the image covers the whole background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* No repeating of the image */
+    color: #222; 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f4f4; /* Fallback in case the image does not load */
+}
+
+header {
+    background: #111; /* Black header */
+    color: #fff; /* White text */
+    padding: 1rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header .navbar .menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+header .navbar .menu li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem;
+    transition: color 0.3s;
+}
+
+header .navbar .menu li a:hover {
+    color: #f4f4f4; /* Lighter hover effect */
+}
+
+main {
+    flex: 1;
+    padding: 1rem;
+    background-color: #fff; /* White background for content */
+}
+
+/* Section Styles */
+section {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.contact {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.contact p {
+    font-size: 1.1rem;
+    color: #333; /* Dark gray for contrast */
+    text-decoration: none;
+}
+
+.contact .button {
+    background-color: #000; /* Black button */
+    color: #fff; /* White text */
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.contact .button:hover {
+    background-color: #333; /* Dark gray on hover */
+}
+
+/* Social Media Icons Styles */
+.home__social {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.home__social-icon {
+    margin: 0 10px; /* Space between icons */
+    font-size: 2rem; /* Adjust size as needed */
+    color: #222; /* Default icon color */
+    transition: color 0.3s;
+}
+
+.home__social-icon:hover {
+    color: #0077b5; /* Change color on hover (LinkedIn blue) */
+}
+
+/* Footer Styles */
+footer {
+    background: #111; /* Black footer */
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+    color: #ddd; /* Lighter gray text */
+}
+
+/* Adjusting layout */
+html {
+    height: 100%;
+}
